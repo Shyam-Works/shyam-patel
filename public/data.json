@@ -1,6 +1,6 @@
 {
   "name": "Shyam Patel",
-  "photo": "./profile.PNG",
+  "photo": "profile.PNG",
   "intro": "As a passionate full-stack developer, I specialize in creating dynamic and responsive web applications using React, Node.js, and MongoDB. With a strong foundation in data analysis, I am committed to building innovative solutions that solve real-world problems. My expertise spans both frontend and backend development, ensuring seamless integration and smooth user experiences. Driven by continuous learning, I strive to stay at the forefront of technology trends and always aim to deliver high-quality, scalable applications",
   "education": "Advanced Diploma in Computer Programming - Seneca Polytechnic College",
   "services": [
@@ -38,42 +38,40 @@
       "name": "Metropolitan Museum of Art Website Project",
       "description": "Developed a full-stack web application using Next.js, JavaScript, and MongoDB to create a dynamic platform for users to register, log in, and explore artworks from the Metropolitan Museum of Art. Implemented advanced search functionality and personalized features such as saving favorite artworks, checking history, and managing user sessions, enhancing the overall user experience and interaction with the dataset fetched via API.",
       "image": "museum.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "link": "https://github.com/Shyam-Works/museum-app"
     },
     {
       "index": 2,
       "name": "Share-Spit",
       "description": "Developed Share-Split, a web-based expense-sharing tool to streamline group expense management by allowing users to add friends, record total and split amounts, and designate who paid, providing clear insights into outstanding balances. Built an interactive, React-driven responsive interface styled with CSS, creating an intuitive and efficient user experience for tracking shared expenses.",
       "image": "money.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "link": "https://github.com/Shyam-Works/Share-split"
     },
     {
       "index": 3,
       "name": "Power BI Data Professional Survey Dashboard",
       "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
       "image": "data1.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "link": "https://www.linkedin.com/feed/update/urn:li:activity:7281293300400103426/"
     },
     {
       "index": 4,
       "name": "British Airways Customer Review Analysis Dashboard",
       "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
       "image": "airline.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "link": "https://public.tableau.com/app/profile/shyam.patel8871/viz/Book2_17357723248620/Dashboard1"
     },
     {
       "index": 5,
       "name": "Delivery Truck Route Testing Project",
       "description": "Developed a C++ application to optimize delivery truck routes, conducting acceptance, integration, and logfile testing using Visual Studio for performance validation. Successfully uploaded the project to GitHub, demonstrating strong skills in testing, debugging, and collaborating on real-world software solutions.",
-      "image": "truck2.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "image": "truck2.jpg"
     },
     {
       "index": 6,
       "name": "Shopping Cart System",
       "description": "Engineered a robust shopping cart system using C++ and SQL, encompassing secure customer login, product validation, and efficient order processing functionalities. Integrated with an Oracle database to manage product data and streamline checkout operations, ensuring data integrity and optimized performance for high-volume transactions.",
-      "image": "shopping.jpg",
-      "link": "https://github.com/yourprofile/chirper"
+      "image": "shopping.jpg"
     }
   ],
   "experience": [
