@@ -1,0 +1,446 @@
+/* Home.css */
+
+/* Main container */
+.home{
+  font-family: "Kanit", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Left Side - Text */
+  .home-text {
+    width: 50%;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #222;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #dd6e42;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* More Info Button */
+  .more-info-btn {
+    margin-top: 20px;
+    background-color: #dd6e42;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .more-info-btn:hover {
+    background-color: #b85c38;
+  }
+  
+  /* Right Side - Profile Image */
+  .home-image {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+/* Circle Background */
+.circle-background {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #ffba49;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 1; /* Ensure the circle is visible */
+  transform: scale(1); /* No scaling effect */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 320px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4f6d7a;
+  border-style:ridge;
+  box-sizing: content-box;
+  opacity: 1; /* Ensure the image is visible */
+  transform: scale(1); /* No scaling effect */
+}
+
+  
+  /* 🔹 MAKE IT RESPONSIVE FOR SMALLER SCREENS */
+  
+  /* Tablet & Mobile View */
+  @media (max-width: 1024px) {
+    .home-container {
+      flex-direction:column-reverse; /* Stack items vertically */
+      text-align: center;
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    .home-text {
+      width: 100%; /* Full width */
+    }
+  
+    .home-image {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .circle-background {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .profile-img {
+      width: 220px;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    .circle-background {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .profile-img {
+      width: 180px;
+    }
+  }
+/* Who Am I Section - Full Centered Layout */
+.who-am-i-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #d496a7, #e9c46a); /* Gradient from left to right */
+  border-radius: 30px;
+}
+
+  
+  /* Centered Image */
+  .who-am-i-image img {
+    width: 70%; /* Adjust width to match 16:9 ratio */
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text Below the Image */
+  .who-am-i-text {
+    max-width: 800px;
+    margin-top: 30px;
+  }
+  
+  .who-am-i-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .who-am-i-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* 🔹 Responsive Design */
+  @media (max-width: 768px) {
+    .who-am-i-image img {
+      width: 90%; /* Smaller screens get a smaller image */
+    }
+  
+    .who-am-i-text h2 {
+      font-size: 28px;
+    }
+  
+    .who-am-i-text p {
+      font-size: 16px;
+    }
+  }
+.text{
+    padding: 30px;
+    background-color: #fbf5f3;
+    border-radius: 50px;
+    border-right: 10px solid #bbbbbb;
+    border-bottom: 10px solid #d6d6d6;
+}  
+.text p{
+    color:#444
+}
+.who-am-i-container{
+    margin-top: -30px;
+}
+
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for the skill section */
+.skills-container {
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 40px auto;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+.skills-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #dd6e42;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* List styling */
+.skills-container ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust to make it responsive */
+  gap: 20px;
+  padding: 0;
+}
+
+/* Skill item styling */
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #555;
+  padding: 12px 20px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+  overflow: hidden; /* Ensures that content doesn't spill out */
+  word-wrap: break-word; /* Breaks long words */
+  text-align: center; /* Centering text */
+}
+
+.skill-item i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #4f6d7a;
+}
+
+/* Hover effect on skill items */
+.skill-item:hover {
+  background-color: #dd6e42;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover i {
+  color: #fff;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .skills-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .skills-container h2 {
+    font-size: 24px;
+  }
+
+  .skill-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center; /* Ensures the content is aligned properly */
+  }
+
+  .skills-container ul {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Reduce minimum size for mobile */
+  }
+}
+
+
+
+
+
+
+
+.new-section {
+  text-align: center; /* Center the content */
+  margin-top: 50px; /* Add spacing from previous sections */
+  padding: 20px;
+}
+
+.new-section-image {
+  margin-bottom: 20px; /* Space between the image and text */
+}
+
+.new-section-image img {
+  width: 250px; /* Adjust the size of the image */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.new-section-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* You can use any color or your theme color */
+}
+
+.new-section-text p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px; /* Limit text width for readability */
+  margin: 0 auto;
+}
+b{
+  color: #e07a5f;
+}
+
+
+
+
+/* Section Styling */
+.services-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3d405b;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Individual Service Cards */
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.icon-box {
+  font-size: 2.5rem;
+  color: #3d405b;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #3d405b;
+  line-height: 1.6;
+}
+
+
+/* dd6e42
+e8dab2
+4f6d7a
+ffba49 
+
+
+004643
+*/

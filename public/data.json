@@ -1,0 +1,122 @@
+{
+  "name": "Shyam Patel",
+  "photo": "profile.png",
+  "intro": "As a passionate full-stack developer, I specialize in creating dynamic and responsive web applications using React, Node.js, and MongoDB. With a strong foundation in data analysis, I am committed to building innovative solutions that solve real-world problems. My expertise spans both frontend and backend development, ensuring seamless integration and smooth user experiences. Driven by continuous learning, I strive to stay at the forefront of technology trends and always aim to deliver high-quality, scalable applications",
+  "education": "Advanced Diploma in Computer Programming - Seneca Polytechnic College",
+  "services": [
+    {
+      "name": "Web Development",
+      "description": "I specialize in building highly responsive, fast, and scalable websites using React, Node.js, and modern web technologies. From landing pages to full-stack applications, I ensure optimal user experiences.",
+      "icon": "fas fa-code"
+    },
+    {
+      "name": "UI/UX Design",
+      "description": "I create visually appealing and intuitive designs to enhance user engagement. My process includes wireframing, prototyping, and final implementation to ensure a smooth and interactive experience.",
+      "icon": "fas fa-paint-brush"
+    },
+    {
+      "name": "Software Testing",
+      "description": "Ensuring high-quality, bug-free applications with thorough manual and automated testing techniques. I focus on improving software efficiency, security, and reliability.",
+      "icon": "fas fa-bug"
+    },
+    {
+      "name": "Data Visualization",
+      "description": "Transforming raw business data into meaningful insights with graphs, dashboards, and reports. I use libraries like D3.js and Power BI to make complex data more understandable.",
+      "icon": "fas fa-chart-line"
+    }
+  ],
+  "projects": [
+    {
+      "index": 0,
+      "name": "Backend System",
+      "description": "Developed a fully functional backend for a video-sharing platform like YouTube, enabling user registration, authentication (login/logout), and profile management using bcrypt for secure password hashing. Implemented video upload functionality with Cloudinary for media storage and Multer for handling file uploads. Designed interactive features including comments, likes, and subscriptions, allowing users to engage with videos, edit/delete their comments, and follow other users. Moreover, integrated a tweeting system where users can post updates and receive likes. Built a user dashboard to display key engagement metrics such as total videos uploaded, views, and likes across all content, inspired by LinkedIn and YouTube analytics. Utilized MongoDB Atlas for database management, ensuring efficient data storage and retrieval. Thoroughly tested and validated API endpoints using Postman, ensuring seamless functionality across all routes.",
+      "image": "backend.jpg",
+      "link": "https://github.com/Shyam-Works/backend"
+    },
+    {
+      "index": 1,
+      "name": "Metropolitan Museum of Art Website Project",
+      "description": "Developed a full-stack web application using Next.js, JavaScript, and MongoDB to create a dynamic platform for users to register, log in, and explore artworks from the Metropolitan Museum of Art. Implemented advanced search functionality and personalized features such as saving favorite artworks, checking history, and managing user sessions, enhancing the overall user experience and interaction with the dataset fetched via API.",
+      "image": "museum.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    },
+    {
+      "index": 2,
+      "name": "Share-Spit",
+      "description": "Developed Share-Split, a web-based expense-sharing tool to streamline group expense management by allowing users to add friends, record total and split amounts, and designate who paid, providing clear insights into outstanding balances. Built an interactive, React-driven responsive interface styled with CSS, creating an intuitive and efficient user experience for tracking shared expenses.",
+      "image": "money.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    },
+    {
+      "index": 3,
+      "name": "Power BI Data Professional Survey Dashboard",
+      "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
+      "image": "data1.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    },
+    {
+      "index": 4,
+      "name": "British Airways Customer Review Analysis Dashboard",
+      "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
+      "image": "airline.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    },
+    {
+      "index": 5,
+      "name": "Delivery Truck Route Testing Project",
+      "description": "Developed a C++ application to optimize delivery truck routes, conducting acceptance, integration, and logfile testing using Visual Studio for performance validation. Successfully uploaded the project to GitHub, demonstrating strong skills in testing, debugging, and collaborating on real-world software solutions.",
+      "image": "truck2.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    },
+    {
+      "index": 6,
+      "name": "Shopping Cart System",
+      "description": "Engineered a robust shopping cart system using C++ and SQL, encompassing secure customer login, product validation, and efficient order processing functionalities. Integrated with an Oracle database to manage product data and streamline checkout operations, ensuring data integrity and optimized performance for high-volume transactions.",
+      "image": "shopping.jpg",
+      "link": "https://github.com/yourprofile/chirper"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Tutor",
+      "company": "StudentScholars",
+      "duration": "August 2024 - Present",
+      "description": "I work as a tutor at Student Scholars, specializing in Web Development, Python, and Scratch. My goal is to provide personalized support to students, helping them work through challenges and fostering a love for coding. By resolving their doubts and guiding them through hands-on learning, I aim to make their experience engaging and enriching. Through teaching, I also continue to deepen my own knowledge of these subjects, making the learning process mutually beneficial.",
+      "image": "teaching.jpg"
+    },
+    {
+      "role": "AI Trainer",
+      "company": "Outlier AI",
+      "duration": "November 2024 - February 2025",
+      "description": "In my role as an AI Trainer at Outlier AI, I work to ensure that AI-generated responses are accurate, relevant, and aligned with user expectations. My responsibilities include reviewing text and code to improve AI performance, performing thorough code validation, and training AI models to enhance their ability to analyze and generate content from both structured and unstructured data. Collaborating closely with cross-functional teams, I focus on optimizing the AI’s efficiency and effectiveness, continuously refining the models to ensure they meet high standards for quality and performance. This role has provided me with valuable experience in working at the intersection of AI, data, and code to create impactful solutions",
+      "image": "AI.jpg"
+    },
+    {
+      "role": "Sales Associate",
+      "company": "7-Eleven",
+      "duration": "November 2023 - Present",
+      "description": "As a Sales Associate at 7-Eleven, I developed strong customer service skills by understanding and addressing customer needs. My role involved assisting customers with their purchases, handling cash transactions, and ensuring a smooth shopping experience. Through daily interactions, I learned how to communicate effectively, solve problems quickly, and adapt to various customer preferences. This experience has reinforced my ability to work under pressure, manage multiple tasks efficiently, and think critically. These skills are directly transferable to my career in IT, where problem-solving, attention to detail, and communication are key in developing software solutions and providing technical support.",
+      "image": "7 11.jpg"
+    }
+  ],
+  "skills":[
+    { "name": "JavaScript", "icon": "fa-brands fa-js" },
+    { "name": "NextJs", "icon": "fab fa-react" },
+    { "name": "React", "icon": "fab fa-react" },
+    { "name": "Express", "icon": "fas fa-server" },
+    { "name": "HTML", "icon": "fab fa-html5" },
+    { "name": "CSS", "icon": "fab fa-css3-alt" },
+    { "name": "Python", "icon": "fab fa-python" },
+    { "name": "SQL", "icon": "fas fa-database" },
+    { "name": "C", "icon": "fab fa-cuttlefish" },
+    { "name": "C++", "icon": "fab fa-cuttlefish" }, 
+    { "name": "Bootstrap", "icon": "fab fa-bootstrap" },
+    { "name": "Tailwind", "icon": "fab fa-css3-alt" },
+    { "name": "Pandas", "icon": "fab fa-python" },
+    { "name": "PowerBI", "icon": "fas fa-chart-bar" },
+    { "name": "Tableau", "icon": "fas fa-chart-pie" },
+    { "name": "GitHub", "icon": "fab fa-github" },
+    { "name": "Git", "icon": "fab fa-git" },
+    { "name": "Jira", "icon": "fab fa-atlassian" }
+  ]
+}

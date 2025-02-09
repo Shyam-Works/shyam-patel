@@ -1,0 +1,109 @@
+/* Full-Width Experience Section */
+.workk{
+  font-family: "Kanit", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.experience-container {
+    width: 100%;
+    padding: 60px 0;
+  }
+  
+  /* Experience Card */
+  .experience-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  /* Hover Effect */
+  .experience-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Left Content */
+  .experience-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .experience-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dd6e42;
+  }
+  
+  .experience-subtitle {
+    font-size: 1.2rem;
+    color: #4f6d7a;
+  }
+  
+  .experience-duration {
+    color: #ffba49;
+    font-size: 1rem;
+  }
+  
+  .experience-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Right Side: Image */
+  .experience-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .experience-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary {
+    background-color: #dd6e42 !important; /* Your custom color */
+    border-color: #dd6e42 !important;
+    color: black !important; /* Text color */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4f6d7a !important; /* Lighter shade on hover */
+    transform: scale(1.05); /* Slight grow effect */
+    border: #ffba49;
+  }
+
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .experience-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .experience-content {
+      padding-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .experience-image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h1{
+    color: #4f6d7a;
+  }
+  
