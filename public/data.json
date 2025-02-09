@@ -38,14 +38,14 @@
       "name": "Metropolitan Museum of Art Website Project",
       "description": "Developed a full-stack web application using Next.js, JavaScript, and MongoDB to create a dynamic platform for users to register, log in, and explore artworks from the Metropolitan Museum of Art. Implemented advanced search functionality and personalized features such as saving favorite artworks, checking history, and managing user sessions, enhancing the overall user experience and interaction with the dataset fetched via API.",
       "image": "museum.jpg",
-      "link": "https://github.com/Shyam-Works/museum-app"
+      "link": "https://museum-app-jade.vercel.app/"
     },
     {
       "index": 2,
       "name": "Share-Spit",
       "description": "Developed Share-Split, a web-based expense-sharing tool to streamline group expense management by allowing users to add friends, record total and split amounts, and designate who paid, providing clear insights into outstanding balances. Built an interactive, React-driven responsive interface styled with CSS, creating an intuitive and efficient user experience for tracking shared expenses.",
       "image": "money.jpg",
-      "link": "https://github.com/Shyam-Works/Share-split"
+      "link": "https://share-split.vercel.app/"
     },
     {
       "index": 3,
