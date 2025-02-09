@@ -176,7 +176,8 @@
   align-items: center;
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #d496a7, #e9c46a); /* Gradient from left to right */
+  /* Gradient from left to right */
+  background-color: #4f6d7a;
   border-radius: 30px;
 }
 
@@ -226,8 +227,8 @@
     padding: 30px;
     background-color: #fbf5f3;
     border-radius: 50px;
-    border-right: 10px solid #bbbbbb;
-    border-bottom: 10px solid #d6d6d6;
+    border-right: 10px solid #e07a5f;
+    border-bottom: 10px solid #b85f46;
 }  
 .text p{
     color:#444
@@ -235,7 +236,9 @@
 .who-am-i-container{
     margin-top: -30px;
 }
-
+.who-am-i-container h2{
+  color: #e07a5f;
+}
 
 /* Global Styling */
 * {
@@ -378,7 +381,6 @@ b{
 
 
 
-
 /* Section Styling */
 .services-container {
   text-align: center;
@@ -435,7 +437,12 @@ b{
   line-height: 1.6;
 }
 
-
+h2{
+  color: #dd6e42;
+}
+.who-am-i-text h2{
+  color: whitesmoke;
+}
 /* dd6e42
 e8dab2
 4f6d7a
