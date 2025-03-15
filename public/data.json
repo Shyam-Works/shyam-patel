@@ -1,6 +1,7 @@
 {
   "name": "Shyam Patel",
   "photo": "profile.PNG",
+  "me": "me.jpg",
   "intro": "As a passionate full-stack developer, I specialize in creating dynamic and responsive web applications using React, Node.js, and MongoDB. With a strong foundation in data analysis, I am committed to building innovative solutions that solve real-world problems. My expertise spans both frontend and backend development, ensuring seamless integration and smooth user experiences. Driven by continuous learning, I strive to stay at the forefront of technology trends and always aim to deliver high-quality, scalable applications",
   "education": "Advanced Diploma in Computer Programming - Seneca Polytechnic College",
   "services": [
@@ -10,22 +11,24 @@
       "icon": "fas fa-code"
     },
     {
-      "name": "UI/UX Design",
-      "description": "I create visually appealing and intuitive designs to enhance user engagement. My process includes wireframing, prototyping, and final implementation to ensure a smooth and interactive experience.",
-      "icon": "fas fa-paint-brush"
+      "name": "Data Analysis",
+      "description": "Leveraging Python, SQL, and data visualization tools, I analyze complex datasets to extract valuable insights and drive data-driven decisions. I am skilled in data cleaning, transformation, and visualization.",
+      "icon": "fas fa-chart-pie"
     },
     {
       "name": "Software Testing",
       "description": "Ensuring high-quality, bug-free applications with thorough manual and automated testing techniques. I focus on improving software efficiency, security, and reliability.",
       "icon": "fas fa-bug"
-    },
-    {
-      "name": "Data Visualization",
-      "description": "Transforming raw business data into meaningful insights with graphs, dashboards, and reports. I use libraries like D3.js and Power BI to make complex data more understandable.",
-      "icon": "fas fa-chart-line"
     }
   ],
   "projects": [
+    {
+      "index": 0,
+      "name": "Xpense (Daily Expense Tracker App)",
+      "description": "Developed Xpense, an expense management application using Next.js and MongoDB, enabling users to efficiently track their income and daily expenses with categorized entries. Implemented user authentication for secure login and registration with sessions, allowing users to add income, record expenses, and categorize transactions for better financial management. Designed an interactive dashboard to provide insights into income, savings, category-wise spending, and daily/weekly expense trends, along with an income vs. savings comparison for informed budgeting decisions.",
+      "image": "Xpense.jpg",
+      "link": "https://xpense-five.vercel.app/"
+    },
     {
       "index": 0,
       "name": "Backend System",
