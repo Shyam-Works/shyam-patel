@@ -296,6 +296,7 @@ body {
   overflow: hidden; /* Ensures that content doesn't spill out */
   word-wrap: break-word; /* Breaks long words */
   text-align: center; /* Centering text */
+  
 }
 
 .skill-item i {
@@ -356,8 +357,8 @@ body {
 }
 
 .new-section-image img {
-  width: 250px; /* Adjust the size of the image */
-  height: 250px;
+  width: 350px; /* Adjust the size of the image */
+  height: 350px;
   object-fit: cover;
   border-radius: 8px; /* Optional: rounded corners for the image */
 }
