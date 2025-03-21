@@ -18,6 +18,9 @@ export default function Navbar() {
               <Link className="nav-link" to="/work">Work</Link>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="#hobby">Hobby</a> {/* Link to hobby section */}
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
