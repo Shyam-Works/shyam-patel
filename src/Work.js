@@ -85,7 +85,7 @@ const Work = () => {
       </div>
 
       <div
-  className="container-fluid"
+  className="container-fluid" id="hobby"
   style={{
     backgroundColor: "#232323",
     minHeight: "100vh", /* Adjusted */
