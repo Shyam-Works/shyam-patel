@@ -1,150 +1,60 @@
-/* Full-Width Experience Section */
-.workk{
-  font-family: "Kanit", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-.experience-container {
-    width: 100%;
-    padding: 60px 0;
+
+.navbar {
+    background-color: #4f6d7a; /* Dark background for a professional look */
+    padding: 15px 0;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
   }
   
-  /* Experience Card */
-  .experience-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 1.35rem; /* Larger font size for brand */
+    text-transform: uppercase; /* Makes the brand text more bold */
+    font-weight: 700;
   }
   
-  /* Hover Effect */
-  .experience-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Left Content */
-  .experience-content {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .experience-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4f6d7a;
-  }
-  
-  .experience-subtitle {
-    font-size: 1.2rem;
-    color: #4f6d7a;
-  }
-  
-  .experience-duration {
-    color: #ffba49;
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
     font-size: 1rem;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
   }
   
-  .experience-description {
-    font-size: 1rem;
-    color: #555;
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ff6f61; /* Add hover color effect */
+    border-bottom: 2px solid #ff6f61; /* Adds an underline on hover */
   }
   
-  /* Right Side: Image */
-  .experience-image {
-    flex: 1;
-    text-align: right;
+  .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #ff6f61; /* Active item color */
   }
   
-  .experience-image img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  .navbar-toggler {
+    border-color: #fff;
   }
   
-  .btn-primary {
-    background-color: #dd6e42 !important; /* Your custom color */
-    border-color: #dd6e42 !important;
-    color: black !important; /* Text color */
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  .navbar-toggler-icon {
+    background-color: #fff;
   }
   
-  .btn-primary:hover {
-    background-color: #4f6d7a !important; /* Lighter shade on hover */
-    transform: scale(1.05); /* Slight grow effect */
-    border: #ffba49;
-  }
-
-  
-  /* Responsive Layout */
-  @media (max-width: 768px) {
-    .experience-card {
-      flex-direction: column;
-      text-align: center;
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      text-align: center; /* Center navbar items on mobile */
     }
-  
-    .experience-content {
-      padding-right: 0;
-      margin-bottom: 15px;
+    .navbar-nav {
+      margin-top: 10px;
     }
+  }
   
-    .experience-image img {
-      width: 100%;
-      height: auto;
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.5rem; /* Slightly smaller font on smaller screens */
     }
   }
 
-  h1{
-    color: #4f6d7a;
-  }
-  .card-img-top {
-    width: 100%;       /* Makes image responsive */
-    height: auto;     /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures images fill the box without stretching */
-    aspect-ratio: 4/5;
-  }
-  .card-img-top1 {
-    width: 100%;       /* Makes image responsive */
-    height: auto;     /* Set a fixed height for all images */
-    object-fit: cover; /* Ensures images fill the box without stretching */
-    aspect-ratio: 2/1;
+  html {
+    scroll-behavior: smooth;
   }
   
-
-
-
-/* Work.css */
-.button-container {
-  text-align: center;  /* Center the button */
-  width: 100%;  /* Take the full width to center it */
-}
-
-.button {
-  margin-top: 20px;
-  width: 10vw;
-  border-radius: 10px;
-  background-color: #eef0eb;
-  opacity: 0.8;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Button hover effect */
-.button:hover {
-  transform: translateY(-5px);  /* Moves button up a little on hover */
-}
-
-@media screen and (max-width: 768px) {
-  .button {
-    width: 50vw; /* Adjust button width for smaller screens */
-  }
-}
-
