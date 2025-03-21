@@ -106,4 +106,55 @@
   h1{
     color: #4f6d7a;
   }
+  .card-img-top {
+    width: 100%;       /* Makes image responsive */
+    height: auto;     /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images fill the box without stretching */
+    aspect-ratio: 4/5;
+  }
+  .card-img-top1 {
+    width: 100%;       /* Makes image responsive */
+    height: auto;     /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images fill the box without stretching */
+    aspect-ratio: 2/1;
+  }
   
+
+  .row1 {
+    background-image: url('/public/photography/nature-bc.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100vw; /* Ensures full width */
+    min-height: 100vh; /* Ensures full height */
+    margin: 0;
+    padding: 0 10px;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Work.css */
+.button-container {
+  text-align: center;  /* Center the button */
+  width: 100%;  /* Take the full width to center it */
+}
+
+.button {
+  margin-top: 20px;
+  width: 10vw;
+  border-radius: 10px;
+  background-color: #eef0eb;
+  opacity: 0.8;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.button:hover {
+  transform: translateY(-5px);  /* Moves button up a little on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 50vw; /* Adjust button width for smaller screens */
+  }
+}
+
