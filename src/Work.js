@@ -100,7 +100,7 @@ const Work = () => {
         <div
   className="row1 justify-content-center position-relative"
   style={{
-    backgroundImage: "url('/photography/bc.jpg')",
+    backgroundImage: "url('/photography/bc.JPG')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -135,7 +135,7 @@ const Work = () => {
             <div className="col-4 col-md-3 m-0 fade-in">
               <div className="card border-0">
                 <img
-                  src="/photography/nature22.jpg"
+                  src="/photography/nature22.JPG"
                   className="card-img-top"
                   alt="Photography 1"
                 />
@@ -146,7 +146,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 fade-in">
               <div className="card border-0">
                 <img
-                  src="/photography/nature11.jpg"
+                  src="/photography/nature11.JPG"
                   className="card-img-top"
                   alt="Photography 2"
                 />
@@ -157,7 +157,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 fade-in">
               <div className="card border-0">
                 <img
-                  src="/photography/nature3.jpg"
+                  src="/photography/nature3.JPG"
                   className="card-img-top"
                   alt="Photography 3"
                 />
@@ -168,7 +168,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 fade-in">
               <div className="card border-0">
                 <img
-                  src="/photography/nature23.jpg"
+                  src="/photography/nature23.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
@@ -178,7 +178,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 fade-in">
               <div className="card border-0">
                 <img
-                  src="/photography/nature7.jpg"
+                  src="/photography/nature7.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
@@ -188,7 +188,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3">
               <div className="card border-0">
                 <img
-                  src="/photography/nature6.jpg"
+                  src="/photography/nature6.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
@@ -198,7 +198,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3">
               <div className="card border-0">
                 <img
-                  src="/photography/nature8.jpg"
+                  src="/photography/nature8.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
@@ -208,7 +208,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3">
               <div className="card border-0">
                 <img
-                  src="/photography/nature10.jpg"
+                  src="/photography/nature10.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
@@ -222,7 +222,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird12.jpg"
+                  src="/photography/bird12.JPG"
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -232,7 +232,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird9.jpg"
+                  src="/photography/bird9.JPG"
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -242,7 +242,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird11.jpg "
+                  src="/photography/bird11.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -252,7 +252,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird10.jpg "
+                  src="/photography/bird10.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -261,7 +261,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird8.jpg "
+                  src="/photography/bird8.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -270,7 +270,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird1.jpg "
+                  src="/photography/bird1.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -279,7 +279,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird7.jpg "
+                  src="/photography/bird7.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -288,7 +288,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird2.jpg "
+                  src="/photography/bird2.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -299,7 +299,7 @@ const Work = () => {
             <div className="col-6 col-md-4 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird4.jpg"
+                  src="/photography/bird4.JPG"
                   className="card-img-top1"
                   alt="Photography 4"
                 />
@@ -308,7 +308,7 @@ const Work = () => {
             <div className="col-6 col-md-4 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird-bc.jpg"
+                  src="/photography/bird-bc.JPG"
                   className="card-img-top1"
                   alt="Photography 4"
                 />
@@ -317,7 +317,7 @@ const Work = () => {
             <div className="col-6 col-md-4 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/bird5.jpg"
+                  src="/photography/bird5.JPG"
                   className="card-img-top1"
                   alt="Photography 4"
                 />
@@ -337,7 +337,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/ppl5.jpg"
+                  src="/photography/ppl5.JPG"
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -357,7 +357,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/ppl2.jpg "
+                  src="/photography/ppl2.JPG "
                   className="card-img-top "
                   alt="Photography 4"
                 />
@@ -366,7 +366,7 @@ const Work = () => {
             <div className="col-4 col-md-3 mb-3 mt-4">
               <div className="card border-0">
                 <img
-                  src="/photography/ppl4.jpg"
+                  src="/photography/ppl4.JPG"
                   className="card-img-top"
                   alt="Photography 4"
                 />
