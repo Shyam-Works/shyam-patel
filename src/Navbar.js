@@ -2,15 +2,15 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const handleHobbyClick = () => {
-  //   navigate("/work"); // Navigate to the Work page
-  //   setTimeout(() => {
-  //     // Scroll to the hobby section after the page has loaded
-  //     document.getElementById("hobby").scrollIntoView({ behavior: "smooth" });
-  //   }, 100); // Delay to make sure the page has loaded
-  // };
+  const handleHobbyClick = () => {
+    navigate("/work"); // Navigate to the Work page
+    setTimeout(() => {
+      // Scroll to the hobby section after the page has loaded
+      document.getElementById("hobby").scrollIntoView({ behavior: "smooth" });
+    }, 100); // Delay to make sure the page has loaded
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
@@ -26,11 +26,9 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/work">Work</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/work#hobby">
-                Hobby
-              </Link>
-            </li>
+            <button className="nav-link btn" onClick={handleHobbyClick}>
+                Hobbies
+              </button>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
