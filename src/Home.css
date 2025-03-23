@@ -228,6 +228,11 @@
     border-radius: 50px;
     border-right: 10px solid #e07a5f;
     border-bottom: 10px solid #b85f46;
+    transform: translateX(-100%); /* Start off-screen to the right */
+  
+  animation: slide-right 1s ease-out forwards;
+  animation-timeline: view(); /* Triggers animation when image enters viewport */
+  animation-range: entry 20% cover 40%;
 }  
 .text p{
     color:#444
@@ -361,6 +366,28 @@ body {
   height: 350px;
   object-fit: cover;
   border-radius: 8px; /* Optional: rounded corners for the image */
+  transform: translateX(100%); /* Start off-screen to the right */
+  
+  animation: slide-left 1s ease-out forwards;
+  animation-timeline: view(); /* Triggers animation when image enters viewport */
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%); /* Start from right */
+  }
+  to {
+    transform: translateX(0); /* End at center */
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%); /* Start from right */
+  }
+  to {
+    transform: translateX(0); /* End at center */
+  }
 }
 
 .new-section-text h2 {
@@ -442,6 +469,11 @@ h2{
 }
 .who-am-i-text h2{
   color: whitesmoke;
+  transform: translateX(-100%); /* Start off-screen to the right */
+  
+  animation: slide-right 1s ease-out forwards;
+  animation-timeline: view(); /* Triggers animation when image enters viewport */
+  animation-range: entry 20% cover 40%;
 }
 /* dd6e42
 e8dab2
