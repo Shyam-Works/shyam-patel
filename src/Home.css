@@ -370,7 +370,7 @@ body {
   
   animation: slide-left 1s ease-out forwards;
   animation-timeline: view(); /* Triggers animation when image enters viewport */
-  animation-range: entry 20% cover 40%;
+  animation-range: entry 40% cover 40%;
 }
 
 @keyframes slide-left {
