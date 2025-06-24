@@ -49,12 +49,13 @@ export default function Home() {
               Hello! I'm <strong>{data.name}</strong>, and my journey in
               technology began with a deep curiosity and passion for solving
               problems through code. Over time, this curiosity evolved into a
-              dedicated career path as a full-stack developer with analytical skills, where I combine
-              creativity with technical expertise to bring ideas to life. <br />
-              <br /> Currently, I'm pursuing an Advanced Diploma in <b>Computer
-              Programming and Analysis</b> at <b>Seneca College</b>, where I'm not only
-              sharpening my technical skills but also gaining practical
-              experience through tutoring, AI research, and real-world
+              dedicated career path as a full-stack developer with analytical
+              skills, where I combine creativity with technical expertise to
+              bring ideas to life. <br />
+              <br /> Currently, I'm pursuing an Advanced Diploma in{" "}
+              <b>Computer Programming and Analysis</b> at <b>Seneca College</b>,
+              where I'm not only sharpening my technical skills but also gaining
+              practical experience through tutoring, AI research, and real-world
               development projects. <br />
               <br /> My passion lies in blending creativity with functionality
               to deliver seamless user experiences and impactful, scalable
@@ -102,10 +103,11 @@ export default function Home() {
           <b>Achievements</b>
         </h2>
         <br />
-        <div className="new-section-image">
+        {/* <div className="new-section-image">
           <img src="ac1.png" alt="New Section" className="img-centered" />
-        </div>
-        <div className="new-section-text">
+        </div> */}
+
+        {/* <div className="new-section-text">
           <h2>Backend Project Success</h2>{" "}
           <p>
             {" "}
@@ -120,31 +122,64 @@ export default function Home() {
             development. I'm excited to continue building on this success and
             sharing my journey with you all!{" "}
           </p>
-        </div>
-      </div>
+        </div> */}
+        <div className="achievements-section">
+          <div className="achievement-card">
+            <div className="new-section-image">
+              <img
+                src="ac1.png"
+                alt="Backend Project Success"
+                className="img-centered"
+              />
+            </div>
+            <div className="new-section-text">
+              <h2>Backend Project Success</h2>
+              <p>
+                I'm thrilled to share the success of my recent backend project!
+                In just one week, the project received an incredible 60,000+
+                impressions and 1,500+ likes, showcasing the strong interest and
+                positive feedback from the community.
+                <br />
+                <br />
+                The project involved developing a scalable backend solution with
+                efficient data management, focusing on performance, security,
+                and integration. The massive engagement I received highlights
+                the impact of the work and reinforces my passion for backend
+                development. I'm excited to continue building on this success
+                and sharing my journey with you all!
+              </p>
+            </div>
+          </div>
 
-      <div className="new-section">
-        <div className="new-section-image">
-          <img src="award.avif" alt="New Section" className="img-centered" />
-        </div>
-        <div className="new-section-text">
-          <h2>Canadian Choice Award in Tutoring 2025 in Markham</h2>
-          <p>
-            {" "}
-            As a recipient of the Canadian Choice Award in Tutoring for 2025 in
-            Markham, I take great pride in my role as a tutor, where I am
-            committed to helping students excel and reach their full potential.
-            I approach my teaching with dedication and a deep understanding of
-            each student’s individual needs, ensuring that every lesson is
-            engaging, impactful, and aligned with their learning goals. <br />
-            <br /> My focus is on creating a supportive environment that fosters
-            both academic growth and personal development. Through personalized
-            guidance, hands-on projects, and clear explanations, I work
-            tirelessly to help students overcome challenges and achieve success
-            in their studies. The recognition we’ve received is a testament to
-            my passion for teaching and my unwavering commitment to delivering
-            results.{" "}
-          </p>
+          <div className="achievement-card">
+            <div className="new-section-image">
+              <img
+                src="photography/award.jpg"
+                alt="Tutoring Award"
+                className="img-centered"
+              />
+            </div>
+            <div className="new-section-text">
+              <h2>Canadian Top Choice Award in Tutoring</h2>
+              <p>
+                As a recipient of the Canadian Choice Award in Tutoring for 2025
+                in Markham, I take great pride in my role as a tutor, where I am
+                committed to helping students excel and reach their full
+                potential.
+                <br />
+                <br />I approach my teaching with dedication and a deep
+                understanding of each student’s individual needs, ensuring that
+                every lesson is engaging, impactful, and aligned with their
+                learning goals. My focus is on creating a supportive environment
+                that fosters both academic growth and personal development.
+                Through personalized guidance, hands-on projects, and clear
+                explanations, I work tirelessly to help students overcome
+                challenges and achieve success in their studies. The recognition
+                we’ve received is a testament to my passion for teaching and my
+                unwavering commitment to delivering results.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
