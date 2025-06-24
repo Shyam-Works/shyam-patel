@@ -370,7 +370,7 @@ body {
   
   animation: slide-left 1s ease-out forwards;
   animation-timeline: view(); /* Triggers animation when image enters viewport */
-  animation-range: entry 40% cover 40%;
+  animation-range: entry 20% cover 40%;
 }
 
 @keyframes slide-left {
@@ -483,3 +483,52 @@ ffba49
 
 004643
 */
+
+
+.achievements-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.achievement-card {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-card img.img-centered {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.new-section-text h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.new-section-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    width: 100%;
+  }
+}
