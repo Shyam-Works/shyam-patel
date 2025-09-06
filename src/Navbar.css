@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: #4f6d7a; /* Dark background for a professional look */
+    background-color: #e94f37; /* Dark background for a professional look */
     padding: 15px 0;
     font-family: "Kanit", serif;
     font-weight: 500;
@@ -53,6 +53,7 @@
       font-size: 1.5rem; /* Slightly smaller font on smaller screens */
     }
   }
+
   html {
     scroll-behavior: smooth;
   }
