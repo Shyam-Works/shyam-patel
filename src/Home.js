@@ -1,8 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
 
 export default function Home() {
   const [data, setData] = useState(null);
+  const [isVisible, setIsVisible] = useState({});
+  const observerRef = useRef(null);
+
+  // Intersection Observer for animations
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible((prev) => ({
+              ...prev,
+              [entry.target.id]: true,
+            }));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, []);
+
+  // Observe elements when they mount
+  const observeElement = (element) => {
+    if (element && observerRef.current) {
+      observerRef.current.observe(element);
+    }
+  };
 
   useEffect(() => {
     fetch("/data.json")
@@ -11,13 +43,56 @@ export default function Home() {
       .catch((error) => console.error("Error loading data:", error));
   }, []);
 
+  // Scroll to section function
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
+  // Parallax effect for hero image
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElement = document.querySelector('.profile-container');
+      if (parallaxElement && window.innerWidth > 768) {
+        parallaxElement.style.transform = `translateY(${scrolled * 0.1}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   if (!data) {
-    return <div className="text-center mt-5">Loading...</div>;
+    return (
+      <div className="home">
+        <div className="home-container">
+          <div className="home-text">
+            <div className="loading-skeleton" style={{ height: '20px', width: '200px', marginBottom: '15px' }}></div>
+            <div className="loading-skeleton" style={{ height: '60px', width: '100%', marginBottom: '20px' }}></div>
+            <div className="loading-skeleton" style={{ height: '100px', width: '100%' }}></div>
+          </div>
+          <div className="home-image">
+            <div className="loading-skeleton circle-background"></div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="home">
-      <div className="home-container">
+    <div className="home smooth-scroll">
+      {/* Floating Background Elements */}
+      <div className="floating-elements">
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+        <div className="floating-element"></div>
+      </div>
+
+      {/* Hero Section */}
+      <div className="home-container" id="hero">
         {/* Left Side - Text Info */}
         <div className="home-text">
           <p className="intro-text">Hello, I'm {data.role}</p>
@@ -25,56 +100,108 @@ export default function Home() {
             <span className="highlight">{data.name}</span>
           </h1>
           <p className="description">{data.intro}</p>
+          
+          {/* Interactive Stats Cards */}
+          <div className="stats-container">
+            <div className="stat-card" onClick={() => scrollToSection('services')}>
+              <span className="stat-number">15+</span>
+              <span className="stat-label">Projects</span>
+            </div>
+            <div className="stat-card" onClick={() => scrollToSection('skills')}>
+              <span className="stat-number">15+</span>
+              <span className="stat-label">Skills</span>
+            </div>
+            <div className="stat-card" onClick={() => scrollToSection('achievements')}>
+              <span className="stat-number">5+</span>
+              <span className="stat-label">Awards</span>
+            </div>
+          </div>
+
+          {/* Enhanced CTA Buttons */}
+          <div className="cta-container">
+            <button 
+              className="cta-button"
+              onClick={() => scrollToSection('about')}
+            >
+              <span>Learn More</span>
+              <i className="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" className="cta-secondary">
+              <span>Get in Touch</span>
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
-        {/* Right Side - Profile Image */}
+
+        {/* Right Side - Enhanced Profile Image */}
         <div className="home-image">
-          <div className="circle-background"></div> {/* Background Circle */}
-          <img src={data.photo} alt={data.name} className="profile-img" />
+          <div className="profile-container">
+            <div className="circle-background"></div>
+            <img src={data.photo} alt={data.name} className="profile-img" />
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="scroll-indicator" onClick={() => scrollToSection('about')}>
+          <span>Scroll Down</span>
         </div>
       </div>
 
-      {/* ///////////////////////////////////////////////////////////////////// */}
-      <div className="who-am-i-container">
-        {/* Centered Image */}
-
-        {/* Text Below the Image */}
-        <div className="who-am-i-text">
-          <h2>About Me</h2>
-          <div className="new-section-image">
+      {/* About Me Section */}
+      <div 
+        className="who-am-i-container" 
+        id="about"
+        ref={observeElement}
+      >
+        <div className="about-content">
+          <div className={`about-image-section ${isVisible.about ? 'slide-in-left visible' : 'slide-in-left'}`}>
             <img src={data.me} alt="About Me" />
           </div>
-          <div className="text">
-            <p>
-              {" "}
-              Hello! I'm <strong>{data.name}</strong>, and my journey in
-              technology began with a deep curiosity and passion for solving
-              problems through code. Over time, this curiosity evolved into a
-              dedicated career path as a full-stack developer with analytical
-              skills, where I combine creativity with technical expertise to
-              bring ideas to life. <br />
-              <br /> Currently, I'm pursuing an Advanced Diploma in{" "}
-              <b>Computer Programming and Analysis</b> at <b>Seneca College</b>,
-              where I'm not only sharpening my technical skills but also gaining
-              practical experience through tutoring, AI research, and real-world
-              development projects. <br />
-              <br /> My passion lies in blending creativity with functionality
-              to deliver seamless user experiences and impactful, scalable
-              software solutions. I’m always eager to learn, adapt, and push the
-              boundaries of what technology can achieve to solve real-world
-              challenges.{" "}
-            </p>
+          
+          <div className={`about-text-section ${isVisible.about ? 'slide-in-right visible' : 'slide-in-right'}`}>
+            <h2>About Me</h2>
+            <div className="text">
+              <p>
+                Hello! I'm <strong>{data.name}</strong>, and my journey in
+                technology began with a deep curiosity and passion for solving
+                problems through code. Over time, this curiosity evolved into a
+                dedicated career path as a full-stack developer with analytical
+                skills, where I combine creativity with technical expertise to
+                bring ideas to life.
+                <br /><br />
+                Currently, I'm pursuing an Advanced Diploma in{" "}
+                <b>Computer Programming and Analysis</b> at <b>Seneca College</b>,
+                where I'm not only sharpening my technical skills but also gaining
+                practical experience through tutoring, AI research, and real-world
+                development projects.
+                <br /><br />
+                My passion lies in blending creativity with functionality
+                to deliver seamless user experiences and impactful, scalable
+                software solutions. I'm always eager to learn, adapt, and push the
+                boundaries of what technology can achieve to solve real-world
+                challenges.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      {/* ///////////////////////////////////////////////////////////////////////////////// */}
-      {/* What I Offer Section - Styled with Cards */}
-      <div className="services-container">
+
+      {/* Services Section */}
+      <div 
+        className="services-container" 
+        id="services"
+        ref={observeElement}
+      >
         <h2 className="section-title">What I Offer</h2>
         <div className="services-grid">
           {data.services.map((service, index) => (
-            <div key={index} className="service-card">
+            <div 
+              key={index} 
+              className={`service-card ${isVisible.services ? 'fade-in visible' : 'fade-in'}`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <div className="icon-box">
-                <i className={service.icon}></i> {/* FontAwesome Icon */}
+                <i className={service.icon}></i>
               </div>
               <h3 className="service-title">{service.name}</h3>
               <p className="service-description">{service.description}</p>
@@ -83,48 +210,39 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ////////////////////////////////////////////////////////////////////////////////// */}
-      <div className="skills-container">
+      {/* Skills Section */}
+      <div 
+        className="skills-container" 
+        id="skills"
+        ref={observeElement}
+      >
         <h2>My Skills</h2>
         <ul>
           {data.skills.map((skill, index) => (
-            <li key={index} className="skill-item">
-              <i className={skill.icon}></i> {/* Font Awesome Icon */}
+            <li 
+              key={index} 
+              className={`skill-item ${isVisible.skills ? 'fade-in visible' : 'fade-in'}`}
+              style={{ animationDelay: `${index * 0.05}s` }}
+            >
+              <i className={skill.icon}></i>
               {skill.name}
             </li>
           ))}
         </ul>
       </div>
-      {/* /////////////////////////////////////////////////////////////////////////////////////// */}
 
-      {/* New Section - Image Centered with Text Underneath */}
-      <div className="new-section">
+      {/* Achievements Section */}
+      <div 
+        className="new-section" 
+        id="achievements"
+        ref={observeElement}
+      >
         <h2>
           <b>Achievements</b>
         </h2>
-        <br />
-        {/* <div className="new-section-image">
-          <img src="ac1.png" alt="New Section" className="img-centered" />
-        </div> */}
-
-        {/* <div className="new-section-text">
-          <h2>Backend Project Success</h2>{" "}
-          <p>
-            {" "}
-            I'm thrilled to share the success of my recent backend project! In
-            just one week, the project received an incredible 60,000+
-            impressions and 1,500+ likes, showcasing the strong interest and
-            positive feedback from the community. <br />
-            <br /> The project involved developing a scalable backend solution
-            with efficient data management, focusing on performance, security,
-            and integration. The massive engagement I received highlights the
-            impact of the work and reinforces my passion for backend
-            development. I'm excited to continue building on this success and
-            sharing my journey with you all!{" "}
-          </p>
-        </div> */}
+        
         <div className="achievements-section">
-          <div className="achievement-card">
+          <div className={`achievement-card ${isVisible.achievements ? 'slide-in-left visible' : 'slide-in-left'}`}>
             <div className="new-section-image">
               <img
                 src="ac1.png"
@@ -151,7 +269,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="achievement-card">
+          <div className={`achievement-card ${isVisible.achievements ? 'slide-in-right visible' : 'slide-in-right'}`}>
             <div className="new-section-image">
               <img
                 src="photography/award.jpg"
@@ -167,15 +285,16 @@ export default function Home() {
                 committed to helping students excel and reach their full
                 potential.
                 <br />
-                <br />I approach my teaching with dedication and a deep
-                understanding of each student’s individual needs, ensuring that
+                <br />
+                I approach my teaching with dedication and a deep
+                understanding of each student's individual needs, ensuring that
                 every lesson is engaging, impactful, and aligned with their
                 learning goals. My focus is on creating a supportive environment
                 that fosters both academic growth and personal development.
                 Through personalized guidance, hands-on projects, and clear
                 explanations, I work tirelessly to help students overcome
                 challenges and achieve success in their studies. The recognition
-                we’ve received is a testament to my passion for teaching and my
+                we've received is a testament to my passion for teaching and my
                 unwavering commitment to delivering results.
               </p>
             </div>
