@@ -1,6 +1,6 @@
 {
   "name": "Shyam Patel",
-  "photo": "profile.PNG",
+  "photo": "profile2.jpg",
   "me": "me.jpg",
   "intro": "As a passionate full-stack developer, I specialize in creating dynamic and responsive web applications using React, Node.js, and MongoDB. With a strong foundation in data analysis, I am committed to building innovative solutions that solve real-world problems. My expertise spans both frontend and backend development, ensuring seamless integration and smooth user experiences. Driven by continuous learning, I strive to stay at the forefront of technology trends and always aim to deliver high-quality, scalable applications",
   "education": "Advanced Diploma in Computer Programming - Seneca Polytechnic College",
@@ -122,3 +122,4 @@
     { "name": "Jira", "icon": "fab fa-atlassian" }
   ]
 }
+
