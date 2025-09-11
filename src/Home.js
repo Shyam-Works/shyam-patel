@@ -103,18 +103,15 @@ export default function Home() {
           
           {/* Interactive Stats Cards */}
           <div className="stats-container">
-            <div className="stat-card" onClick={() => scrollToSection('services')}>
+            <div className="stat-card" onClick={() => window.location.href = '/work'}>
               <span className="stat-number">15+</span>
               <span className="stat-label">Projects</span>
             </div>
             <div className="stat-card" onClick={() => scrollToSection('skills')}>
-              <span className="stat-number">15+</span>
-              <span className="stat-label">Skills</span>
+              <span className="stat-number">25+</span>
+              <span className="stat-label">technical Skills</span>
             </div>
-            <div className="stat-card" onClick={() => scrollToSection('achievements')}>
-              <span className="stat-number">5+</span>
-              <span className="stat-label">Awards</span>
-            </div>
+            
           </div>
 
           {/* Enhanced CTA Buttons */}
@@ -126,10 +123,13 @@ export default function Home() {
               <span>Learn More</span>
               <i className="fas fa-arrow-right"></i>
             </button>
-            <a href="#contact" className="cta-secondary">
+            <a href="/contact" className="cta-secondary">
               <span>Get in Touch</span>
               <i className="fas fa-external-link-alt"></i>
             </a>
+            <a href="https://www.linkedin.com/in/shyam-patel-2b47a7297/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin" style={{ fontSize: '24px' }}></i>
+          </a>
           </div>
         </div>
 
@@ -147,12 +147,31 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Me Section */}
+      {/* About Me Section with Floating Background Elements */}
       <div 
         className="who-am-i-container" 
         id="about"
         ref={observeElement}
       >
+        {/* Floating Background Animation */}
+        <div className="about-floating-bg">
+          {/* Circle Elements */}
+          <div className="about-float-element circle small"></div>
+          <div className="about-float-element circle medium pulse"></div>
+          <div className="about-float-element circle large"></div>
+          
+          {/* Triangle Elements */}
+          <div className="about-float-element triangle"></div>
+          
+          {/* Square Elements */}
+          <div className="about-float-element square small pulse"></div>
+          <div className="about-float-element square medium"></div>
+          
+          {/* Diamond Elements */}
+          <div className="about-float-element diamond small"></div>
+          <div className="about-float-element diamond large pulse"></div>
+        </div>
+
         <div className="about-content">
           <div className={`about-image-section ${isVisible.about ? 'slide-in-left visible' : 'slide-in-left'}`}>
             <img src={data.me} alt="About Me" />
@@ -162,24 +181,14 @@ export default function Home() {
             <h2>About Me</h2>
             <div className="text">
               <p>
-                Hello! I'm <strong>{data.name}</strong>, and my journey in
-                technology began with a deep curiosity and passion for solving
-                problems through code. Over time, this curiosity evolved into a
-                dedicated career path as a full-stack developer with analytical
-                skills, where I combine creativity with technical expertise to
-                bring ideas to life.
+                I'm <strong>{data.name}</strong>, a problem-solver who turned curiosity into expertise. 
+                Currently pursuing an Advanced Diploma in <b>Computer Programming and Analysis</b> at <b>Seneca College</b>, 
+                where I balance learning with teaching as a tutor at StudentScholars Private School and working on real-world projects.
                 <br /><br />
-                Currently, I'm pursuing an Advanced Diploma in{" "}
-                <b>Computer Programming and Analysis</b> at <b>Seneca College</b>,
-                where I'm not only sharpening my technical skills but also gaining
-                practical experience through tutoring, AI research, and real-world
-                development projects.
+                I focus on creating solutions that work beautifully and solve actual problems. 
+                Every project is an opportunity to push boundaries and deliver meaningful results.
                 <br /><br />
-                My passion lies in blending creativity with functionality
-                to deliver seamless user experiences and impactful, scalable
-                software solutions. I'm always eager to learn, adapt, and push the
-                boundaries of what technology can achieve to solve real-world
-                challenges.
+                <a href="/work" className="work-link">Check out my work here</a>
               </p>
             </div>
           </div>
