@@ -2,7 +2,7 @@
   "name": "Shyam Patel",
   "photo": "profile2.jpg",
   "me": "me.jpg",
-  "intro": "As a passionate full-stack developer, I specialize in creating dynamic and responsive web applications using React, Node.js, and MongoDB. With a strong foundation in data analysis, I am committed to building innovative solutions that solve real-world problems. My expertise spans both frontend and backend development, ensuring seamless integration and smooth user experiences. Driven by continuous learning, I strive to stay at the forefront of technology trends and always aim to deliver high-quality, scalable applications",
+  "intro": "I am a dedicated and passionate IT professional with a strong foundation in web development, data analysis, and software testing. I thrive on solving complex problems and continuously learning new technologies to enhance my skill set. My goal is to leverage my technical expertise and creativity to build innovative solutions that drive business success and improve user experiences.",
   "education": "Advanced Diploma in Computer Programming - Seneca Polytechnic College",
   "services": [
     {
@@ -22,45 +22,52 @@
     }
   ],
   "projects": [
-    {
-      "index": 0,
-      "name": "Xpense (Daily Expense Tracker App)",
-      "description": "Developed Xpense, an expense management application using Next.js and MongoDB, enabling users to efficiently track their income and daily expenses with categorized entries. Implemented user authentication for secure login and registration with sessions, allowing users to add income, record expenses, and categorize transactions for better financial management. Designed an interactive dashboard to provide insights into income, savings, category-wise spending, and daily/weekly expense trends, along with an income vs. savings comparison for informed budgeting decisions.",
-      "image": "Xpense.jpg",
-      "link": "https://xpense-five.vercel.app/"
+        {
+          "index": 0,
+          "name": "Fragments API Server",
+          "description": "Built and deployed a production-ready cloud-native Fragments API Server with a complete Progressive Web Application frontend on AWS. The system supports full CRUD operations for multiple fragment formats (text, JSON, images) with real-time format conversion, offline capabilities, and secure authentication. Designed as a fully containerized microservices architecture using Docker, Amazon ECS, DynamoDB, S3, and Cognito, ensuring scalability and zero-downtime deployments with CI/CD through GitHub Actions.",
+          "image": "cloud.png",
+          "link": "https://github.com/yourusername/fragments-api-server"
     },
     {
       "index": 0,
       "name": "Backend System",
-      "description": "Developed a fully functional backend for a video-sharing platform like YouTube, enabling user registration, authentication (login/logout), and profile management using bcrypt for secure password hashing. Implemented video upload functionality with Cloudinary for media storage and Multer for handling file uploads. Designed interactive features including comments, likes, and subscriptions, allowing users to engage with videos, edit/delete their comments, and follow other users. Moreover, integrated a tweeting system where users can post updates and receive likes. Built a user dashboard to display key engagement metrics such as total videos uploaded, views, and likes across all content, inspired by LinkedIn and YouTube analytics. Utilized MongoDB Atlas for database management, ensuring efficient data storage and retrieval. Thoroughly tested and validated API endpoints using Postman, ensuring seamless functionality across all routes.",
+      "description": "Built a comprehensive video-sharing platform backend with secure user authentication, profile management, and video upload functionality. Implemented interactive features including comments, likes, subscriptions, and social updates, plus an analytics dashboard tracking user engagement metrics. Utilized MongoDB Atlas for data management and validated all API endpoints through comprehensive testing.",
       "image": "backend.jpg",
       "link": "https://github.com/Shyam-Works/backend"
     },
     {
+  "index": 1,
+  "name": "Hotel Reservation System",
+  "description": "Developed a Java-based hotel reservation system using JavaFX with MVC architecture. Features dual interfaces: customer portal for booking with automatic payment calculation, and admin dashboard with full CRUD operations, discount management, and reporting analytics. Implemented SQLite for data persistence and Java Logger for system activity tracking.",
+  "image": "hotel.png",
+  "link": "https://github.com/yourusername/hotel-reservation-system"
+},
+    {
+      "index": 0,
+      "name": "Expense Tracker App",
+      "description": "Developed Xpense expense tracker with Next.js/MongoDB stack, featuring secure authentication, categorized transaction management, and interactive analytics dashboard. Created financial insights including spending trends, category breakdowns, and income vs. savings analysis to support user budgeting decisions.",
+      "image": "Xpense.jpg",
+      "link": "https://xpense-five.vercel.app/"
+    },
+    {
       "index": 1,
-      "name": "Metropolitan Museum of Art Website Project",
-      "description": "Developed a full-stack web application using Next.js, JavaScript, and MongoDB to create a dynamic platform for users to register, log in, and explore artworks from the Metropolitan Museum of Art. Implemented advanced search functionality and personalized features such as saving favorite artworks, checking history, and managing user sessions, enhancing the overall user experience and interaction with the dataset fetched via API.",
+      "name": "Metropolitan Museum of Art ",
+      "description": "Developed Next.js web application for Metropolitan Museum art exploration with secure user authentication and MongoDB integration. Created advanced search capabilities, personalized user features (favorites, history tracking), and session management while consuming external API data for dynamic content delivery.",
       "image": "museum.jpg",
       "link": "https://museum-app-jade.vercel.app/"
     },
     {
-      "index": 2,
-      "name": "Share-Spit",
-      "description": "Developed Share-Split, a web-based expense-sharing tool to streamline group expense management by allowing users to add friends, record total and split amounts, and designate who paid, providing clear insights into outstanding balances. Built an interactive, React-driven responsive interface styled with CSS, creating an intuitive and efficient user experience for tracking shared expenses.",
-      "image": "money.jpg",
-      "link": "https://share-split.vercel.app/"
-    },
-    {
       "index": 3,
       "name": "Power BI Data Professional Survey Dashboard",
-      "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
+      "description": "comprehensive Power BI dashboard analyzing survey data from 600+ data professionals. Implemented data modeling and interactive visualizations to showcase salary comparisons by role, work-life balance metrics, programming language preferences, and regional participation trends, delivering actionable insights for strategic workforce planning and decision-making.",
       "image": "data1.jpg",
       "link": "https://www.linkedin.com/feed/update/urn:li:activity:7281293300400103426/"
     },
     {
       "index": 4,
       "name": "British Airways Customer Review Analysis Dashboard",
-      "description": "Designed and developed an interactive Power BI dashboard to analyze and visualize survey data from over 600 respondents, providing a comprehensive breakdown of job roles, salaries, work-life balance, and programming language preferences in the data profession. Utilized data modeling, and dynamic visualizations to deliver actionable insights, showcasing metrics such as salary comparisons by role, regional participation, and career entry difficulty, enhancing decision-making for key data-driven conclusions.",
+      "description": "Built interactive Tableau dashboard analyzing British Airways customer reviews across key service metrics including food quality, cabin staff service, seat comfort, and value. Developed visualizations for trend analysis, geographic rating distribution, aircraft performance comparisons, and traveler segmentation to identify improvement opportunities and enhance customer experience.",
       "image": "airline.jpg",
       "link": "https://public.tableau.com/app/profile/shyam.patel8871/viz/Book2_17357723248620/Dashboard1"
     },
@@ -79,18 +86,32 @@
   ],
   "experience": [
     {
-      "role": "Tutor",
+      "role": "Coding Tutor",
       "company": "StudentScholars",
       "duration": "August 2024 - Present",
       "description": "I work as a tutor at Student Scholars, specializing in Web Development, Python, and Scratch. My goal is to provide personalized support to students, helping them work through challenges and fostering a love for coding. By resolving their doubts and guiding them through hands-on learning, I aim to make their experience engaging and enriching. Through teaching, I also continue to deepen my own knowledge of these subjects, making the learning process mutually beneficial.",
-      "image": "teaching.jpg"
+      "image": "studentScholars.jpg"
     },
+    {
+      "role": "QA Tester",
+      "company": "Freelance",
+      "duration": "August 2025 - September 2025",
+      "description": "Worked as a QA Tester focusing on comprehensive quality assurance across multiple product features using industry-standard tools like Selenium for automated testing and JIRA for bug tracking and project management. Conducted thorough functionality testing to ensure smooth performance, identified and documented bugs with clear reporting for development teams, and provided UI/UX improvement suggestions. Collaborated closely with cross-functional teams to maintain product consistency and reliability, while monitoring daily updates and retesting fixes to confirm stability. This role enhanced my attention to detail, effective cross-team communication skills, and understanding that quality assurance is an ongoing process integral to the entire development lifecycle.",
+      "image": "studentScholars.jpg"
+    },
+    {
+  "role": "Web Developer (Volunteer)",
+  "company": "Torrent Power",
+  "duration": "March 2025 - April 2025",
+  "description": "Developed a responsive single-page React.js application to streamline contractor order management for electronic parts. Implemented categorized part listings with quantity input functionality and integrated automated email processing to send order data in table format. Successfully replaced manual ordering systems with a digital workflow, significantly improving operational efficiency and eliminating manual data entry for the client.",
+  "image": "torrent-power.jpg"
+},
     {
       "role": "AI Trainer",
       "company": "Outlier AI",
       "duration": "November 2024 - February 2025",
-      "description": "In my role as an AI Trainer at Outlier AI, I work to ensure that AI-generated responses are accurate, relevant, and aligned with user expectations. My responsibilities include reviewing text and code to improve AI performance, performing thorough code validation, and training AI models to enhance their ability to analyze and generate content from both structured and unstructured data. Collaborating closely with cross-functional teams, I focus on optimizing the AI’s efficiency and effectiveness, continuously refining the models to ensure they meet high standards for quality and performance. This role has provided me with valuable experience in working at the intersection of AI, data, and code to create impactful solutions",
-      "image": "AI.jpg"
+      "description": "Worked as an AI Trainer ensuring AI-generated responses are accurate and aligned with user expectations. Responsibilities included reviewing text and code to improve AI performance, performing code validation, and training models to enhance content analysis and generation capabilities. Collaborated with cross-functional teams to optimize AI efficiency and continuously refine models to meet high quality standards.",
+      "image": "CTA-8.png"
     },
     {
       "role": "Sales Associate",
@@ -100,26 +121,41 @@
       "image": "7 11.jpg"
     }
   ],
-  "skills":[
-    { "name": "JavaScript", "icon": "fa-brands fa-js" },
-    { "name": "NextJs", "icon": "fab fa-react" },
-    { "name": "React", "icon": "fab fa-react" },
-    { "name": "Express", "icon": "fas fa-server" },
-    { "name": "HTML", "icon": "fab fa-html5" },
-    { "name": "CSS", "icon": "fab fa-css3-alt" },
-    { "name": "Python", "icon": "fab fa-python" },
-    { "name": "Java", "icon": "fa-brands fa-java" },
-    { "name": "SQL", "icon": "fas fa-database" },
-    { "name": "C", "icon": "fab fa-cuttlefish" },
-    { "name": "C++", "icon": "fab fa-cuttlefish" }, 
-    { "name": "Bootstrap", "icon": "fab fa-bootstrap" },
-    { "name": "Tailwind", "icon": "fab fa-css3-alt" },
-    { "name": "Pandas", "icon": "fab fa-python" },
-    { "name": "PowerBI", "icon": "fas fa-chart-bar" },
-    { "name": "Tableau", "icon": "fas fa-chart-pie" },
-    { "name": "GitHub", "icon": "fab fa-github" },
-    { "name": "Git", "icon": "fab fa-git" },
-    { "name": "Jira", "icon": "fab fa-atlassian" }
-  ]
-}
+  "skills": [
+  { "name": "HTML", "icon": "fab fa-html5" },
+  { "name": "CSS", "icon": "fab fa-css3-alt" },
+  { "name": "Bootstrap", "icon": "fab fa-bootstrap" },
+  { "name": "Tailwind", "icon": "fab fa-css3-alt" },
 
+  { "name": "JavaScript", "icon": "fa-brands fa-js" },
+  { "name": "React", "icon": "fab fa-react" },
+  { "name": "NextJs", "icon": "fab fa-react" },
+  { "name": "Express", "icon": "fas fa-server" },
+
+  { "name": "Python", "icon": "fab fa-python" },
+  { "name": "Pandas", "icon": "fab fa-python" },
+
+  { "name": "Java", "icon": "fa-brands fa-java" },
+  { "name": "C", "icon": "fab fa-cuttlefish" },
+  { "name": "C++", "icon": "fab fa-cuttlefish" },
+
+  { "name": "SQL", "icon": "fas fa-database" },
+  { "name": "DynamoDB", "icon": "fas fa-database" },
+
+  { "name": "AWS", "icon": "fab fa-aws" },
+  { "name": "Azure", "icon": "fab fa-microsoft" },
+  { "name": "Docker", "icon": "fab fa-docker" },
+  { "name": "CI/CD", "icon": "fas fa-code-branch" },
+  { "name": "cURL", "icon": "fas fa-terminal" },
+
+  { "name": "Jest", "icon": "fas fa-vial" },
+
+  { "name": "PowerBI", "icon": "fas fa-chart-bar" },
+  { "name": "Tableau", "icon": "fas fa-chart-pie" },
+
+  { "name": "Git", "icon": "fab fa-git" },
+  { "name": "GitHub", "icon": "fab fa-github" },
+  { "name": "Jira", "icon": "fab fa-atlassian" }
+]
+
+}
